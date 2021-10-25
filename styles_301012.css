@@ -1,0 +1,442 @@
+/* Обнуление границ всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Общая верстка
+================================= */
+body {
+	background: #fff url(layout/body_tile.gif) repeat-x top left;	
+	text-align: center; 
+	font: 95%  Helvetica, Arial, sans-serif, Verdana,times new roman, Georgia,   Geneva;
+}	 
+
+#wrapper {
+  width: 960px;
+/*  background: url(layout/wrapper_tile.gif) repeat-y top left;*/
+  margin: 0px auto; 
+  text-align: left; 
+} 
+
+#header {
+  margin: 0px;
+  background: url(layout/header_bg.jpg) no-repeat top left;
+  height: 256px;
+  } 
+
+#content {
+  min-height: 500px;	
+  margin: 30px 0px 30px 240px;
+  padding-left: 10px;
+  color: #555;
+  background-color: transparent; 
+}
+
+#mainNav { 
+  position: absolute;
+  top: 216px;
+  width: 960px;	 
+  height: 40px; 
+  background: transparent url(layout/mnav_bg.gif) repeat-x top left;  
+  border-left: 1px solid white;
+}
+
+#secondaryNav {
+  background: transparent url(layout/secnav_bg==.gif) no-repeat top left;
+  position: absolute;
+  top: 266px;
+  width: 220px;
+  margin: 10px 10px 10px 0px;  
+  padding: 30px 10px 10px 10px;
+  font-size: 14px;
+}
+
+#footer {
+  background: white url(layout/body_tile.jpg) repeat-x bottom left;
+}
+
+/* Ссылки по умолчанию */
+
+a:link {
+background-color: transparent;
+text-decoration: none;
+color: #369;
+}
+a:visited {
+background-color: transparent;
+text-decoration: none;
+color: #369;
+}
+a:hover {
+background-color: transparent;
+color: #369;
+text-decoration: underline;
+}
+
+
+#header h1 span {
+  display: none;
+
+  }
+#header h1 {
+  float: left;
+  top: 80px;	
+  left: 50px;
+  width: 312px;
+  height: 180px;
+  background: url(layout/header_h1_bg.png) no-repeat center center;
+} 
+
+#header h2 span {
+display: none;
+}
+
+#header h3 {
+  color: white;
+  padding: 30px 20px 30px 30px; 
+  background: url(layout/header_h2_bg.gif) no-repeat center right;
+  background-color: transparent;
+  text-align: right;
+  text-decoration: italic;
+}
+
+
+#mainNav UL { 
+  color: #fff; 
+  FONT: 20px Arial, Georgia, Times, "Times New Roman", serif; 
+}
+
+#mainNav li { 
+  height: 38px; 	
+  border-right: 1px solid white;	
+  width: auto;
+  float: left;	 
+  display: inline;
+  LIST-STYLE-TYPE: none;  
+}
+
+#mainNav li a {	 
+  float: left;
+  display: block;
+  color: white;	
+  text-decoration: none;
+  height: 33px;  
+  background: url(layout/mnav_link_bg.gif) no-repeat top left;  
+  background-color: transparent; 
+  padding: 7px 25px 0px 33px;
+  MARGIN: 0px 0px 0px 0px;
+}
+
+#mainNav li a:hover {
+  height: 37px;  
+  padding-top: 3px;  
+  background: url(layout/mnav_link_bg.gif) no-repeat bottom left;  
+
+}
+
+
+
+#secondaryNav h3 span{ 
+  display: none;
+}
+
+#secondaryNav UL {
+  width: 190px;
+  background: url(layout/1.gif) no-repeat top left;     
+  MARGIN: 0px;
+  PADDING: 0px 0px 40px 0px;
+}
+
+#secondaryNav li {
+  width: 190px;
+  text-indent: 10px;
+  padding-left: 0px;
+  MARGIN-TOP: 0px;
+  PADDING-BOTTOM: 0px;
+  LIST-STYLE-TYPE: none;
+/*  BORDER-BOTTOM: #777 1px dotted; */
+}
+
+#secondaryNav li a { 
+  width: 100%;
+  color: #369;
+  text-decoration: underline;
+  display: block;
+  padding: 5px 5px 5px 10px;  
+  background: url(layout/secnav_bg_a.gif) no-repeat center left; 
+}
+
+#secondaryNav li a:hover {	 
+  text-decoration: underline;
+  color: #F60;
+} 
+
+
+#search {
+padding-left: 10px;
+color: #369;
+}
+
+#mainContent p {
+  line-height: 130%;
+  margin: 15px 0px 15px 0px;
+}
+.call {
+  background: url(layout/call.png) no-repeat top left;
+  padding: 0px 0px 0px 45px; 
+}  
+.p1 {
+  font-style: italic;
+}
+
+
+.clear {
+  clear:both;
+}
+
+/* Списки по умолчанию */
+#mainContent ul {
+  margin: 20px 0px 20px 0px;
+}
+#mainContent ul li {
+  margin: 5px 0px 5px 20px;
+  padding: 0px 0px 0px 25px;  
+  LIST-STYLE-TYPE: none;
+  background: url(layout/li_bg.png) no-repeat top left;
+}
+
+/* ================== */
+
+#mainContent h1 { 
+  padding: 10px 0px 0px 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #ff8a18;	   
+/*  background: url(layout/h1_bg.png) repeat-x bottom left;*/
+  text-decoration: none;  
+  font: 180% Times New Roman;
+} 
+
+#mainContent h2 {
+  clear: both;
+  padding: 20px 0px 5px 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #369;
+  text-decoration: none;
+  border-bottom: 1px dashed #69c;
+  font: 130% Verdana, arial;
+} 
+
+#mainContent h3 { 
+  padding: 10px 10px 0px 10px;
+  color: #FF9900;
+  font-family: arial;
+} 
+
+#mainContent img { 
+  float: left;
+  margin: 20px;  
+} 
+
+/* img1 применяется когда рисунки должны занимать всю ширину страницы, то есть когда рисунок широкий чтобы не было узкого текста */
+#mainContent img.img1 { 
+  float: none;
+  padding: 20px;
+} 
+/* img2 применяется когда рисунки должны идти один за одним вертикально, иначе они съезжают если текст не занимает всё место */
+#mainContent img.img2 { 
+  clear: both;
+
+  padding: 20px;
+} 
+
+/* Таблица с параметрами продукции
+================================= */
+
+table {
+  clear: both;
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+  width: 95%;
+  border: 0px solid  #069;
+  font-size: 12px;
+  background-color:#fff;
+  border-bottom: 1px dotted #ddd;
+}
+
+caption {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 15px 0 5px 0;
+}
+
+thead {
+  background: #369;
+  color: #fff;  
+  text-align: center;
+}
+
+
+
+td, th {
+  padding: 5px 0px;
+  text-align: center;
+  border-left: 1px dotted #ddd;
+  border-right: 1px dotted #ddd;
+}
+
+th {
+  color: #fff;   
+  background-color: #369;
+}
+
+tr.odd {
+  background-color:#DEF;
+}
+
+
+.firstcol {
+text-align: left;
+padding-left: 10px;
+
+}
+
+/* Навигация по разделам Path
+================================= */
+#path {
+  margin: 0px 0px 20px 0px;
+  text-align: left;
+  line-height: 100%;
+  FONT: 14px Arial, Georgia, Times, "Times New Roman", serif;
+}
+#mainContent #path li
+{
+/*text-indent: 20px;*/
+padding: 0px 0px 0px 5px;
+margin: 0px 0px 0px 0px;
+display: inline;
+width: auto;
+background: none;
+}
+
+#path ul
+{
+padding: 0px;
+}
+
+#path a
+{
+color: #FF6600;
+display: inline;
+width: auto;
+padding-left: 0px;
+padding-right: 20px;
+text-decoration: underline;
+background: url(images/pathmarker.gif) no-repeat right center;
+}
+
+#path a:hover, #path a:active { color: #369; text-decoration: underline; }
+
+/* Боксы для ссылок на продукцию на главной странице box
+================================= */
+
+.box
+{
+float: left;
+width: 200px;
+height: 100px;
+margin: 5px 2px 2px 2px;
+padding: 5px;
+background: url(images/boxbg.png) no-repeat left top;
+border-right: 0px dotted #a5a5a5;
+border-bottom: 0px dotted #a5a5a5;
+FONT: 14px Arial, Georgia, Times, "Times New Roman", serif;
+}
+
+#mainContent .box img  
+{
+float: left;
+border: 0px solid #404040;
+margin: 5px;
+padding: 0px;
+}
+
+#mainContent .box p
+{
+display: block;
+height: 70px;
+margin: 0px;
+padding: 5px;
+}
+
+#mainContent .box a
+{
+text-decoration: none;
+}
+
+.prod {
+  padding-bottom: 20px;
+  border-bottom: 1px dotted #a5a5a5;
+}
+.rlink {
+text-align: right;
+}
+
+
+#mainContent .imgbox {	
+ display: block;
+ float: left;
+ padding: 10px; 
+ margin: 0px 20px 20px 0px;
+ border: 1px solid #CFD7FF;   
+ background-color: #F5FFFF;
+}
+#mainContent .imgbox img {
+ float: none; 
+ padding: 0px;
+ margin: 0px;
+ }  
+
+.imgbox p {	 
+  text-align: center;
+  font-style: italic; 
+  margin: 0px;
+  font-size: 14px;
+ } 
+ 
+
+ #mainContent .imgbox1 {	
+ text-align: center;
+ display: block; 
+ padding: 10px; 
+ margin: 10px;
+ border: 0px solid #CFD7FF;   
+ background-color: transparent;
+}	
+
+#mainContent .imgbox1 img {
+ float: none; 
+ padding: 0px;
+ margin: 0px;
+ }  
+
+.imgbox1 p {	
+  text-align: center;
+  font-style: italic; 
+  margin: 0px;
+  font-size: 14px;
+ } 
+ 
+ #footer p { 
+  color: #999;
+  background: url(layout/footer_bg.jpg) no-repeat bottom left;
+  clear: both; 
+  line-height: 160%;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.8em;
+}

@@ -1,0 +1,440 @@
+/* Обнуление границ всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Общая верстка
+================================= */
+body {
+	text-align: center; 
+	font: 100% Arial, Georgia, times new roman, Verdana, Helvetica, sans-serif, Geneva;
+}	 
+
+#wrapper {
+  width: 960px;
+  background: url(layout/trbg_bg.jpg) no-repeat top left;
+  margin: 0px auto; 
+  text-align: left; 
+} 
+
+#header {
+  margin: 0px 0px 0px 0px;
+  height: 480px;
+} 
+
+#content {
+  min-height: 500px;	
+  margin: 0px 0px 0px 00px;
+  color: #666;
+  padding: 0px 0px 50px 50px;
+  border: 0px solid blue;
+  background-color: transparent; 
+}
+
+#mainNav { 
+  position: absolute;
+  top: 40px;
+  margin-left: 550px;
+  width: 960px;	 
+  height: 40px; 
+  border: 0px solid blue;  
+}
+
+#secondaryNav {
+  display: none;
+}
+
+#footer {
+  background: white url(layout/body_tile.jpg) repeat-x bottom left;
+}
+
+
+
+/* Панель навигации. Сначала главная потом вторичная по вертикали под Хедером слева. 
+================================= */
+/* 
+#Nav { 
+  position: absolute;
+  top: 240px;
+  margin-left: 10px;
+  text-align: left;
+  width: auto;
+  FONT: 14px Arial, Georgia, Times, "Times New Roman", serif;
+  border: 1px solid #c0c0c0;
+  LINE-HEIGHT: 150%;  
+  BACKGROUND-POSITION: left top; BACKGROUND-REPEAT: no-repeat;
+}
+*/		
+/* Ссылки по умолчанию */
+
+a:link {
+background-color: transparent;
+text-decoration: none;
+color: #2A7FFF;
+}
+a:visited {
+background-color: transparent;
+text-decoration: none;
+color: #2A7FFF;
+}
+a:hover {
+background-color: transparent;
+color: #069;
+text-decoration: underline;
+}
+h1 {
+	font-size: 1.6em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+
+#header h1 span {
+  display: none;
+
+  }
+#header h1 {
+  float: left;
+  top: 80px;	
+  left: 50px;
+  width: 312px;
+  height: 180px;
+} 
+
+#header h2 span {
+display: none;
+}
+
+#header h3 {
+  display: none;
+  color: white;
+  padding: 30px 20px 30px 30px; 
+  background: url(layout/header_h2_bg.gif) no-repeat center right;
+  background-color: transparent;
+  text-align: right;
+  text-decoration: italic;
+}
+
+
+
+
+
+#mainNav UL { 
+  color: #fff; 
+  FONT: 20px Arial, Georgia, Times, "Times New Roman", serif; 
+}
+
+#mainNav li { 
+  height: 38px; 	
+  border-right: 0px solid white;	
+  width: auto;
+  float: left;	 
+  display: inline;
+  LIST-STYLE-TYPE: none;  
+}
+
+#mainNav li a {	 
+  float: left;
+  display: block;
+  color: white;	
+  text-decoration: none;
+  height: 33px;  
+  background-color: transparent; 
+  padding: 7px 20px 0px 20px;
+  MARGIN: 0px 0px 0px 0px;
+}
+
+#mainNav li a:hover {
+  height: 37px;  
+  padding-top: 8px;  
+  background: url(layout/trbg_mmenu_hover.gif) no-repeat center center;  
+
+}
+
+
+
+#secondaryNav h3 span{ 
+  display: none;
+}
+
+#secondaryNav UL {
+  width: 190px;
+  background: url(layout/1.gif) no-repeat top left;     
+  MARGIN: 0px;
+  PADDING: 0px 0px 40px 0px;
+}
+
+#secondaryNav li {
+  width: 190px;
+  text-indent: 10px;
+  padding-left: 0px;
+  MARGIN-TOP: 0px;
+  PADDING-BOTTOM: 0px;
+  LIST-STYLE-TYPE: none;
+  BORDER-BOTTOM: #777 1px dotted;
+}
+
+#secondaryNav li a { 
+  width: 100%;
+  color: #369;
+  text-decoration: none;
+  display: block;
+  padding: 10px;  
+  background: url(layout/secnav_bg_a.gif) no-repeat center left; 
+}
+
+#secondaryNav li a:hover {	 
+  text-decoration: underline;
+} 
+
+
+#search {
+padding-left: 10px;
+color: #369;
+}
+
+
+
+
+#content ul {
+  margin: 0px 0px 0px 10px;
+  padding: 10px;
+} 
+
+#content ol {
+  text-indent: 50px;
+  margin: 0px 0px 0px 100px;
+  padding-left: 10px;
+}
+
+
+#mainContent { 
+  LINE-HEIGHT: 160%;
+  border: 0px solid green;
+} 
+
+p {
+  MARGIN-TOP: 15px;
+}
+p.p1 {
+  font-style: italic;
+}
+
+.clear {
+  clear:both;
+}
+
+#mainContent h1 { 
+  padding: 5px 10px 10px 10px;
+  color: #369;
+  font-family: arial;  
+  background: url(layout/h1_bg.gif) no-repeat bottom left; 
+  
+} 
+
+#mainContent h2 {
+  clear: both;
+  margin-top: 10px;
+  padding: 2px 10px 0px 40px;
+  color: #555;
+  font-family: arial;
+} 
+
+#mainContent h3 { 
+  padding: 10px 10px 0px 10px;
+  color: #FF9900;
+  font-family: arial;
+} 
+
+#mainContent img { 
+  float: left;
+  padding: 20px;
+} 
+
+/* img1 применяется когда рисунки должны занимать всю ширину страницы, то есть когда рисунок широкий чтобы не было узкого текста */
+#mainContent img.img1 { 
+  float:none;
+  padding: 20px;
+} 
+/* img2 применяется когда рисунки должны идти один за одним вертикально, иначе они съезжают если текст не занимает всё место */
+#mainContent img.img2 { 
+  clear: both;
+  padding: 20px;
+} 
+
+#secondaryContent { 
+  width: 30%;
+  min-width: 10em;
+  display: inline; /* :KLUDGE: Fixes IE double margin float bug */
+  float: right; 
+} 
+
+
+
+#footer p { 
+  color: #999;
+  background: url(layout/footer_bg.jpg) no-repeat bottom left;
+  clear: both; 
+  line-height: 160%;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* Для верстки в 2 колонки убираем с экрана секондари контент и расширяем мэйнКонтент на 100% поля Контент
+================================= */
+#twoColLayout #secondaryContent {
+display: none;
+}
+#twoColLayout #mainContent {
+width: 100%;
+}
+/* Таблица с параметрами продукции
+================================= */
+
+table {
+  clear: both;
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+  width: 95%;
+  border: 1px solid  #069;
+  font-size: 12px;
+  background-color:#fff;
+}
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 1em 0;
+  padding: 0px;
+}
+
+thead {
+  background: #3d80df;
+  color: #fff;  
+  text-align: center;
+  border-top: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+}
+
+
+
+td, th {
+  padding: 2px 0px;
+  text-align: center;
+  border: 1px solid #069;
+}
+
+
+.odd {
+  background-color:#edf5ff;
+}
+
+thead tr:hover {
+  background-color: #3d80df;
+  color: #fff;
+}
+
+.firstcol {
+text-align: left;
+padding-left: 10px;
+
+}
+
+/* Навигация по разделам Path
+================================= */
+#path {
+  display: none;
+  margin: 0px 0px 20px 0px;
+  text-align: left;
+  line-height: 100%;
+  FONT: 14px Arial, Georgia, Times, "Times New Roman", serif;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+#path li
+{
+text-indent: 20px;
+display: inline;
+width: auto;
+}
+
+#path ul
+{
+padding: 5px;
+}
+
+#path a
+{
+color: #FF6600;
+display: inline;
+width: auto;
+padding-left: 8px;
+padding-right: 20px;
+text-decoration: none;
+background: url(images/pathmarker.gif) no-repeat right center;
+}
+
+#path a:hover, #path a:active { color: #404040; text-decoration: underline; }
+
+/* Боксы для ссылок на продукцию на главной странице box
+================================= */
+
+.box
+{
+float: left;
+width: 200px;
+height: 100px;
+margin: 15px 5px 5px 5px;
+padding: 0px;
+background: url(images/boxbg.gif) no-repeat left top;
+border-right: 1px dotted #a5a5a5;
+border-bottom: 1px dotted #a5a5a5;
+FONT: 14px Arial, Georgia, Times, "Times New Roman", serif;
+}
+
+#mainContent .box img  
+{
+float: left;
+border: 1px solid #404040;
+margin: 5px;
+padding: 0px;
+}
+
+#mainContent .box p
+{
+display: block;
+height: 70px;
+margin: 0px;
+padding: 5px;
+}
+
+#mainContent .box a
+{
+text-decoration: none;
+}
+
+.prod {
+  padding-bottom: 20px;
+  border-bottom: 1px dotted #a5a5a5;
+}
+.rlink {
+text-align: right;
+}
+
+/* 
+#mainContent .box a
+{
+display: block;
+background-color: #FFD4D4;
+border-top: 1px solid #404040;
+border-bottom: 1px solid #404040;
+text-align: right;
+margin: 0px;
+padding: 5px;
+}
+*/
